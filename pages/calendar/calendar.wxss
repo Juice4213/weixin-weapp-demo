@@ -23,3 +23,75 @@
   align-items: center;
   justify-content: center;
 }
+
+.prev {
+  text-align: right;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.prev-handle{
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-area {
+  width: 50%;
+  height: 80rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.next {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.next-handle {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.weeks {
+  height: 50rpx;
+  line-height: 50rpx;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.week {
+  text-align: center;
+  flex-grow: 1;
+  font-size: 28rpx;
+}
+
+.days {
+  height: 500rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid {
+  width: 107.1428571429rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
