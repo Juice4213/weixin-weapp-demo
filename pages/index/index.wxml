@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <!--view容器-->
+    <view class="swiper">
+       <!--swiper组件-->
+       <swiper class="swiper-view" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+           <!--block控制循环从imgUrls里面读取类，这个名字和data里面的要一致-->
+           <block wx:for="{{imgUrls}}" wx:key="id">
+               <!--每次循环创建一个swiper-item组件-->
+               <swiper-item>
+                    <image src="{{item.img}}" class="slide-image" ></image>
+               </swiper-item>
+           </block>
+       </swiper>
+    </view>
+    <view class="page">
+        <audio id="myAudio" src="{{musicSrc}}" controls="true" poster="{{posterSrc}}" name="{{name}}" author="{{author}}" bindplay="bindplay" bindtimeupdate="bindtimeupdate"  action="{{action}}" loop></audio>
+        <view class="slide-view">
+          <text class="slider-text">{{minTime}}</text>
+          <slider class="slider" min="{{minNum}}" max="{{maxNum}}" show-value="{{showValue}}" bindchange="bindSliderChange" value="{{sliderValue}}" step="{{sliderStep}}"/>
+          <text class="slider-text">{{maxTime}}</text>
+        </view>
+    </view>
+
+    <button class="button" type="primary" bindtap="audioPlay">播放</button>
+    <button class="button" type="primary" bindtap="audioPause">暂停</button>
+    <button class="button" type="primary" bindtap="audioPlaybackRateSpeedUp">2倍播速</button>
+    <button class="button" type="primary" bindtap="audioPlaybackRateNormal">调为1倍速</button>
+    <button class="button" type="primary" bindtap="audioPlaybackRateSlowDown">调为0.5倍速</button>
+    <button class="button" type="primary" bindtap="audioNext">下一曲</button>
+    <button class="button" type="primary" bindtap="audioStart">回到开头</button>
+
+  </view>
+</view>

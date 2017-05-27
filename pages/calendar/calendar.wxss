@@ -1,0 +1,25 @@
+/* calendar.wxss */
+
+.calendar-view {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background: red;*/
+}
+
+.calendar {
+  color: #ff629a;
+  display: flex;
+  flex-direction: column;
+}
+
+.tap-handle{
+  height: 80rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

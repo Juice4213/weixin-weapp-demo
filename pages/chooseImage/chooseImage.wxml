@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <text>chooseImg</text>
+  <view class="image-view" style="width:{{screenWidth}}px">
+    <block wx:for="{{imgSrcArr}}" wx:key="*item">
+      <view class="image-item-view" style="width:{{screenWidth/4}}px;height:{{screenWidth/4}}px">
+        <text wx:if="{{delButton}}" class="del-text" bindtap="deleteImg" data-index="{{index}}">删除</text>
+        <view class="preview-image" bindtap="previewImg" data-preImg="{{item}}">
+          <text class="preview-text">点击预览图片</text>
+          <image src="{{item}}" style="width:{{screenWidth/4}}px;height:{{screenWidth/4}}px" ></image>
+        </view>
+        
+        <text class="index">{{index}}</text>
+      </view>
+    </block>
+    <view class="image-item-view" style="width:{{screenWidth/4}}px;height:{{screenWidth/4}}px" bindtap="chooseImg">
+      <image src="../../images/add.png" style="width:{{screenWidth/4}}px;height:{{screenWidth/4}}px"></image>
+    </view>
+    <view wx:if="{{imgSrcArr.length != 0}}" class="image-item-view" style="width:{{screenWidth/4}}px;height:{{screenWidth/4}}px" bindtap="removeImg">
+      <image src="../../images/clear.png" style="width:{{screenWidth/4}}px;height:{{screenWidth/4}}px"></image>
+    </view>
+  </view>
+  
+  
+</view>

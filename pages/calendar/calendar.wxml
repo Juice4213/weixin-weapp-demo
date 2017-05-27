@@ -1,0 +1,11 @@
+<!--calendar.wxml-->
+<scroll-view scroll-y class="calendar-view" style="height:600rpx">
+    <view class="calendar">
+        <view class="tap-handle">
+            <view class="prev">《</view>
+            <view class="date-area">2017年5月</view>
+            <view class="next">》</view>
+        </view>
+        
+    </view>
+</scroll-view>

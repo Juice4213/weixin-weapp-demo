@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/calendar/calendar",
+    "pages/index/index",
+    
+    "pages/message/message",
+    "pages/logs/logs",
+    "pages/myLike/myLike",
+    "pages/addressList/addressList",
+    "pages/cityPicker/cityPicker",
+    "pages/chooseImage/chooseImage"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Juice&Leo",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "1296db",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/camera.png",
+        "selectedIconPath": "images/tabbar/camera_hl.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "images/tabbar/bubble.png",
+        "selectedIconPath": "images/tabbar/bubble_hl.png"
+      },
+      {
+        "pagePath": "pages/myLike/myLike",
+        "text": "收藏",
+        "iconPath": "images/tabbar/star.png",
+        "selectedIconPath": "images/tabbar/star_hl.png"
+      }
+    ]
+  }
+}
