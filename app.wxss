@@ -8,3 +8,12 @@
   padding: 0 0;
   box-sizing: border-box;
 } 
+
+.flex-wrap{
+  display: flex;
+  flex-direction: row;
+}
+
+.tappable:hover {
+  opacity: .6;
+}

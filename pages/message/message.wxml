@@ -9,6 +9,7 @@
   <button class="button" bindtap="pushToCityPicker">省市区三级联动</button>
   <button class="button" bindtap="pushToChooseImage">选择图片</button>
   <button class="button" bindtap="pushToCalendar">日历</button>
+  <button class="button" bindtap="pushToSwiperDel">左划删除</button>
 </view>
 
 

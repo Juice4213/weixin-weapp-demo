@@ -27,6 +27,12 @@ Page({
     })
   },
 
+  pushToSwiperDel () {
+    wx.navigateTo({
+      url: '../leftSwiperDel/index',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

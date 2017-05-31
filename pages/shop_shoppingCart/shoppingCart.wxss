@@ -1,0 +1,12 @@
+/* shoppingCart.wxss */
+.item-view {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 24rpx 16rpx;
+}
+
+.thumbImg{
+  width: 140rpx;
+  height: 140rpx;
+}
