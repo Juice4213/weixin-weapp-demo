@@ -1,14 +1,16 @@
 {
   "pages": [
-    "pages/message/message",
     "pages/shop_shoppingCart/shoppingCart",
+    "pages/leftSwiperDel/index",
+    "pages/message/message",
+   
     "pages/index/index",
     "pages/calendar/calendar",
     "pages/logs/logs",
     "pages/addressList/addressList",
     "pages/cityPicker/cityPicker",
-    "pages/chooseImage/chooseImage",
-    "pages/leftSwiperDel/index"
+    "pages/chooseImage/chooseImage"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
